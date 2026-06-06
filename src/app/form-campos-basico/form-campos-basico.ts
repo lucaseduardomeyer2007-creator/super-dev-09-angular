@@ -11,7 +11,7 @@ export class FormCamposBasico {
   // Signal vamos utilizar para relacionar um campo por exemplo com a variável
   nome = signal<string>("")
   sobrenome = signal<string>("");
-
+  resultadoNomeCompleto: string = "";
   // Caso a opção for número, ou sem valor(null)
   numero01 = signal<number | null>(null);
   numero02 = signal<number | null>(null)
@@ -23,7 +23,9 @@ export class FormCamposBasico {
   apresentarNomeCompleto(): void {
     // let nomeCompleto = this.nome() + " " + this.sobrenome();
     const nomeCompleto: string = `${this.nome()} ${this.sobrenome()}`
-    alert(`Nome Comleto: ${nomeCompleto}`);
+  
+    this.resultadoNomeCompleto = nomeCompleto;
+    // alert(`Nome Completo: ${nomeCompleto}`);
   }
 
   realizarCalculo() : void {
