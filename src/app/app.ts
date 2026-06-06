@@ -6,9 +6,10 @@ import {CidadeIndaial} from './cidade-indaial/cidade-indaial';
 import {Comidas} from './comidas/comidas';
 import {Carros} from './carros/carros';
 import {Filmes} from './filmes/filmes';
+import {Navbar} from './navbar/navbar';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, BoasVindas, CidadeBlumenau, CidadeIndaial, Comidas, Carros, Filmes],
+  imports: [RouterOutlet, RouterLink, BoasVindas, CidadeBlumenau, CidadeIndaial, Comidas, Carros, Filmes, Navbar],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
