@@ -7,9 +7,10 @@ import {Comidas} from './comidas/comidas';
 import {Carros} from './carros/carros';
 import {Filmes} from './filmes/filmes';
 import {Navbar} from './navbar/navbar';
+import {Atividade1} from './atividade1/atividade1';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, BoasVindas, CidadeBlumenau, CidadeIndaial, Comidas, Carros, Filmes, Navbar],
+  imports: [RouterOutlet, RouterLink, BoasVindas, CidadeBlumenau, CidadeIndaial, Comidas, Carros, Filmes, Navbar, Atividade1],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
