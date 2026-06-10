@@ -1,56 +1,12 @@
-#calculo-temperatura {
-  max-width: 400px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: #f8f9fa;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+<div>
+  <label>Nota 1:</label>
+  <input type="number" [(ngModel)]="nota1" (ngModelChange)="nota1.set($event)" />
 
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+  <label>Nota 2:</label>
+  <input type="number" [(ngModel)]="nota2" (ngModelChange)="nota2.set($event)" />
 
-#calculo-temperatura label {
-  font-weight: bold;
-  color: #333;
-}
+  <label>Nota 3:</label>
+  <input type="number" [(ngModel)]="nota3" (ngModelChange)="nota3.set($event)" />
 
-#calculo-temperatura input[type="number"] {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-}
-
-#calculo-temperatura input[type="number"]:focus {
-  outline: none;
-  border-color: #ff9800;
-}
-
-#calculo-temperatura div {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-#calculo-temperatura input[type="radio"] {
-  accent-color: #ff9800;
-  cursor: pointer;
-}
-
-#calculo-temperatura button {
-  margin-top: 10px;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  background-color: #ff9800;
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#calculo-temperatura button:hover {
-  background-color: #f57c00;
-}
+  <button (click)="calcularMedia()">Calcular Média</button>
+</div>

@@ -8,29 +8,23 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './atividade2.scss',
 })
 export class Atividade2 {
+  // Signals para armazenar as notas
+  nota1 = signal<number | null>(null);
+  nota2 = signal<number | null>(null);
+  nota3 = signal<number | null>(null);
 
-nota1 = signal<number | null>(null);
-nota2 = signal<number | null>(null);
-nota3 = signal<number | null>(null);
-
-  calcularMedia(): void {
-  
-      if(this.nota1() ===null || this.nota2()===null || this.nota3() ===null){
-      alert("Preencha o campo vazio");
+  calcularMedia() {
+    // Validação: todas as notas precisam estar preenchidas
+    if (this.nota1() === null || this.nota2() === null || this.nota3() === null) {
+      alert('Preencha todas as notas!');
       return;
     }
 
+    const media = (this.nota1()! + this.nota2()! + this.nota3()!) / 3;
 
-    const calculoMedia = (this.nota1()! + this.nota2()! + this.nota3()!) / 3;
+    // Verifica aprovação
+    const status = media >= 7 ? 'Aprovado' : 'Reprovado';
 
-    if(calculoMedia >= 6){
-      alert("aprovado");
-    } else {
-      alert("Aluno Reprovado");
-    }
-    
-    alert("A média geral das notas é " + calculoMedia);
-
+    alert(`Média: ${media.toFixed(2)} - ${status}`);
+  }
 }
-}
-

@@ -19,8 +19,7 @@ import {Atividade9} from './atividade9/atividade9';
 import {Atividade10} from './atividade10/atividade10';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, BoasVindas, CidadeBlumenau, CidadeIndaial, Comidas, Carros, Filmes, Navbar, Atividade1, 
-    Atividade2, Atividade3, Atividade4, Atividade5, Atividade6, Atividade7, Atividade8, Atividade9, Atividade10],
+  imports: [RouterOutlet, RouterLink, BoasVindas, CidadeBlumenau, CidadeIndaial, Comidas, Carros, Filmes, Navbar, Atividade1, Atividade2, Atividade3, Atividade4, Atividade5, Atividade6, Atividade7, Atividade8, Atividade9, Atividade10],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
