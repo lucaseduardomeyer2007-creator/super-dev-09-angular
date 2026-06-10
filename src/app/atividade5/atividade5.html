@@ -1,0 +1,15 @@
+<div id="calculo-imc">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" [(ngModel)]="nome">
+
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso" [(ngModel)]="peso">
+
+    <label for="altura">Altura (m):</label>
+    <input type="number" id="altura" [(ngModel)]="altura">
+
+    <button (click)="calcularIMC()">Calcular IMC</button>
+
+
+    <p> Resultado : {{ resultado() }}</p>
+</div>

@@ -1,34 +1,34 @@
-#formulario-nome-completo {
+#calculo-imc {
   max-width: 400px;
   margin: 30px auto;
   padding: 20px;
+  background-color: #f8f9fa;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #f8f9fa;
 
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
-#formulario-nome-completo label {
+#calculo-imc label {
   font-weight: bold;
   color: #333;
 }
 
-#formulario-nome-completo input {
+#calculo-imc input {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
 }
 
-#formulario-nome-completo input:focus {
+#calculo-imc input:focus {
   outline: none;
   border-color: #007bff;
 }
 
-#formulario-nome-completo button {
+#calculo-imc button {
   margin-top: 10px;
   padding: 10px;
   border: none;
@@ -40,6 +40,16 @@
   transition: background-color 0.3s;
 }
 
-#formulario-nome-completo button:hover {
+#calculo-imc button:hover {
   background-color: #0056b3;
+}
+
+#calculo-imc p {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  color: #333;
+  text-align: center;
+  font-weight: 500;
 }

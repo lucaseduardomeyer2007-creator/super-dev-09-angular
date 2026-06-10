@@ -1,0 +1,17 @@
+<div id="calculo-temperatura">
+  <label for="temperatura">Digite a temperatura</label>
+  <input type="number" id="temperatura" [(ngModel)]="temperatura">
+
+  <div>
+    <input type="radio" name="opcao" value="celsiusToFahrenheit" [(ngModel)]="opcao">
+    <label>Celsius para Fahrenheit</label>
+  </div>
+
+  <div>
+    <input type="radio" name="opcao" value="fahrenheitToCelsius" [(ngModel)]="opcao">
+    <label>Fahrenheit para Celsius</label>
+  </div>
+
+
+  <button (click)="CalcularTemperatura()">Converter</button>
+</div>

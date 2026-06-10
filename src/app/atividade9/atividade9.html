@@ -1,0 +1,18 @@
+<div id="cadastro-usuario">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" [(ngModel)]="nome">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" [(ngModel)]="email">
+
+  <label for="senha">Senha:</label>
+  <input type="password" id="senha" [(ngModel)]="senha">
+
+  <label for="confirmarSenha">Confirmar senha:</label>
+  <input type="password" id="confirmarSenha" [(ngModel)]="confirmarSenha">
+
+  <button (click)="cadastrar()">Cadastrar</button>
+
+  <!-- Exibe resultado -->
+  <p>Resultado: {{ resultado() }}</p>
+</div>

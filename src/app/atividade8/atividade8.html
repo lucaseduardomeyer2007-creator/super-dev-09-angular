@@ -1,0 +1,26 @@
+<div id="simulador-frete">
+  <label for="produto">Nome do produto:</label>
+  <input type="text" id="produto" [(ngModel)]="produto">
+
+  <label for="valor">Valor do produto (R$):</label>
+  <input type="number" id="valor" [(ngModel)]="valor">
+
+  <label for="regiao">Região de entrega:</label>
+  <select id="regiao" [(ngModel)]="regiao">
+    <option value="">Selecione...</option>
+    <option value="sul">Sul</option>
+    <option value="sudeste">Sudeste</option>
+    <option value="norte">Norte</option>
+    <option value="nordeste">Nordeste</option>
+    <option value="centro-oeste">Centro-Oeste</option>
+  </select>
+
+  <div>
+    <input type="checkbox" id="expressa" [(ngModel)]="expressa">
+    <label for="expressa">Entrega expressa</label>
+  </div>
+
+  <button (click)="calcularFrete()">Calcular Total</button>
+
+  <p> Resumo: {{ textoResumo() }}</p>
+</div>

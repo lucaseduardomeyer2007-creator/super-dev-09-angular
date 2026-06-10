@@ -1,0 +1,74 @@
+#orcamento-viagem {
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#orcamento-viagem label {
+  font-weight: bold;
+  color: #333;
+}
+
+#orcamento-viagem input[type="text"],
+#orcamento-viagem input[type="number"],
+#orcamento-viagem select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#orcamento-viagem input:focus,
+#orcamento-viagem select:focus {
+  outline: none;
+  border-color: #20c997;
+}
+
+#orcamento-viagem div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#orcamento-viagem input[type="radio"],
+#orcamento-viagem input[type="checkbox"] {
+  accent-color: #20c997;
+  cursor: pointer;
+}
+
+#orcamento-viagem button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #20c997;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#orcamento-viagem button:hover {
+  background-color: #1aa179;
+}
+
+#orcamento-viagem h3 {
+  margin-top: 10px;
+  color: #333;
+  text-align: center;
+}
+
+#orcamento-viagem p {
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}

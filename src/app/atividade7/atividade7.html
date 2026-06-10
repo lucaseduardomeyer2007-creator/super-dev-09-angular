@@ -1,0 +1,35 @@
+<div id="plano-academia">
+    <label for="nome">Nome do aluno:</label>
+    <input type="text" id="nome" [(ngModel)]="nome">
+
+    <p>Escolha o plano:</p>
+    <div>
+        <input type="radio" name="plano" value="basico" [(ngModel)]="plano">
+        <label>Básico</label>
+    </div>
+    <div>
+        <input type="radio" name="plano" value="intermediario" [(ngModel)]="plano">
+        <label>Intermediário</label>
+    </div>
+    <div>
+        <input type="radio" name="plano" value="premium" [(ngModel)]="plano">
+        <label>Premium</label>
+    </div>
+
+    <label for="periodo">Período do contrato:</label>
+    <select id="periodo" [(ngModel)]="periodo">
+        <option value="">Selecione...</option>
+        <option value="mensal">Mensal</option>
+        <option value="trimestral">Trimestral</option>
+        <option value="anual">Anual</option>
+    </select>
+
+    <div>
+        <input type="checkbox" id="personal" [(ngModel)]="personal">
+        <label for="personal">Deseja personal trainer</label>
+    </div>
+
+    <button (click)="calcularPlano()">Calcular Plano</button>
+
+    <p> Resumo do plano do contrato: {{ resumo() }}</p>
+</div>

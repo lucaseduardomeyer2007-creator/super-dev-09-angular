@@ -1,0 +1,42 @@
+<div id="orcamento-viagem">
+  <label for="nome">Nome do viajante:</label>
+  <input type="text" id="nome" [(ngModel)]="nome">
+
+  <label for="destino">Destino:</label>
+  <select id="destino" [(ngModel)]="destino">
+    <option value="">Selecione...</option>
+    <option value="praia">Praia</option>
+    <option value="montanha">Montanha</option>
+    <option value="cidade">Cidade</option>
+  </select>
+
+  <label for="dias">Quantidade de dias:</label>
+  <input type="number" id="dias" [(ngModel)]="dias">
+
+  <p>Hospedagem:</p>
+  <div>
+    <input type="radio" name="hospedagem" value="simples" [(ngModel)]="hospedagem">
+    <label>Simples</label>
+  </div>
+  <div>
+    <input type="radio" name="hospedagem" value="luxo" [(ngModel)]="hospedagem">
+    <label>Luxo</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="cafe" [(ngModel)]="cafe">
+    <label for="cafe">Café da manhã</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="passeio" [(ngModel)]="passeio">
+    <label for="passeio">Passeio turístico</label>
+  </div>
+
+  <button (click)="calcularOrcamento()">Calcular Orçamento</button>
+
+  <div>
+    <h3>Resumo da Viagem</h3>
+    <p>{{ resumo() }}</p>
+  </div>
+</div>

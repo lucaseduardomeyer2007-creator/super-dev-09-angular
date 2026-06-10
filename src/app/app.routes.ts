@@ -6,6 +6,15 @@ import {Filmes} from './filmes/filmes';
 import {Comidas} from './comidas/comidas';
 import {FormCamposBasico} from './form-campos-basico/form-campos-basico';
 import {Atividade1} from './atividade1/atividade1';
+import {Atividade2} from './atividade2/atividade2';
+import {Atividade3} from './atividade3/atividade3';
+import {Atividade4} from './atividade4/atividade4';
+import {Atividade5} from './atividade5/atividade5';
+import {Atividade6} from './atividade6/atividade6';
+import {Atividade7} from './atividade7/atividade7';
+import {Atividade8} from './atividade8/atividade8';
+import {Atividade9} from './atividade9/atividade9';
+import {Atividade10} from './atividade10/atividade10';
 
 export const routes: Routes = [
 {path: "cidade/blumenau", loadComponent: () => CidadeBlumenau},
@@ -15,6 +24,15 @@ export const routes: Routes = [
 {path: "comidas", loadComponent: () => Comidas},
 {path: "formulario/campos-basico", loadComponent: () => FormCamposBasico},
 {path: "atividade1", loadComponent: () => Atividade1},
+{path: "atividade2", loadComponent: () => Atividade2},
+{path: "atividade3", loadComponent: () => Atividade3},
+{path: "atividade4", loadComponent: () => Atividade4},
+{path: "atividade5", loadComponent: () => Atividade5},
+{path: "atividade6", loadComponent: () => Atividade6},
+{path: "atividade7", loadComponent: () => Atividade7},
+{path: "atividade8", loadComponent: () => Atividade8},
+{path: "atividade9", loadComponent: () => Atividade9},
+{path: "atividade10", loadComponent: () => Atividade10},
 ];
 
 
