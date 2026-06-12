@@ -8,7 +8,7 @@
   },
   "include": [
     "src/**/*.ts"
-  ],
+, "../super-dev-09-curso-angular/data-seed/app.spec.ts"  ],
   "exclude": [
     "src/**/*.spec.ts"
   ]
