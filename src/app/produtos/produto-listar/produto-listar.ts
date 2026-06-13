@@ -25,7 +25,8 @@ export class ProdutoListar {
     return total.toFixed(2).replace(".", ",");
   })
 
-  carregarProdutos(): void {
+  carregarProdutos
+  (): void {
     // Carregando do localStorage os produtos
     const produtosString = localStorage.getItem("produtos");
     if (produtosString === null) {

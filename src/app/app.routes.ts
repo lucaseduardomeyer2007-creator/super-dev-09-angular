@@ -18,6 +18,9 @@ import {Atividade10} from './atividade10/atividade10';
 import { ProdutoCadastrar } from './produtos/produto-cadastrar/produto-cadastrar';
 import { ProdutoListar } from './produtos/produto-listar/produto-listar';
 import { ProdutoEditar } from './produtos/produto-editar/produto-editar';
+import { ClienteCadastrar } from './clientes/cliente-cadastrar/cliente-cadastrar';
+import { ClienteEditar } from './clientes/cliente-editar/cliente-editar';
+import { ClienteListar } from './clientes/cliente-listar/cliente-listar';
 export const routes: Routes = [
 {path: "cidade/blumenau", loadComponent: () => CidadeBlumenau},
 {path: "cidade/indaial", loadComponent: () => CidadeIndaial},
@@ -37,7 +40,10 @@ export const routes: Routes = [
 {path: "atividade10", loadComponent: () => Atividade10},
 { path: "produtos/cadastrar", loadComponent: () => ProdutoCadastrar },
 { path: "produtos", loadComponent: () => ProdutoListar},
-{ path: "produtos/editar/:id", loadComponent: () => ProdutoEditar}
+{ path: "produtos/editar/:id", loadComponent: () => ProdutoEditar},
+{ path: "clientes/cadastrar", loadComponent: () => ClienteCadastrar},
+{ path: "clientes/editar/:id", loadComponent: () => ClienteEditar},
+{ path: "clientes", loadComponent: () => ClienteListar}
 ];
 
 
